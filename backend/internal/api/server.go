@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/example/satnet/backend/internal/simulation"
+	"github.com/example/satnet/backend/simulation"
 )
 
 type Server struct {
@@ -27,7 +27,7 @@ type simulationResponse struct {
 func NewServer(addr string) *Server {
 	return &Server{
 		addr: addr,
-		sim:  simulation.NewSimulator(),
+		sim:  simulation.NewDemoSimulator(),
 	}
 }
 
