@@ -1,0 +1,12 @@
+# Node
+frontend/node_modules
+frontend/dist
+
+# Go
+backend/bin
+backend/*.log
+
+# Editors
+.DS_Store
+.vscode/
+.idea/
